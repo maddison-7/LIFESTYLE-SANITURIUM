@@ -13,7 +13,7 @@
             <a href="{{ route('home') }}" class="flex items-center gap-2.5">
                 <span class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-600 text-white font-bold text-lg">L</span>
                 <span class="leading-tight">
-                    <span class="block text-base font-bold text-white">Lifestyle Sanitarium</span>
+                    <span class="block text-base font-bold text-white">MADILA LIFESTYLE</span>
                     <span class="block text-[11px] font-medium text-primary-300 tracking-wide">CLINIC</span>
                 </span>
             </a>

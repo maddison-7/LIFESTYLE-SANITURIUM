@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -6,8 +7,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'DM Sans', 'Avenir Next', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Cormorant Garamond', Georgia, ui-serif, serif;
 
     /* Brand: Medical Green / Teal */
     --color-primary-50: #eefbf6;
@@ -23,10 +25,23 @@
     --color-primary-950: #062723;
 
     /* Supporting: soft gray / light green */
-    --color-surface-50: #f7faf9;
-    --color-surface-100: #eef3f1;
-    --color-surface-200: #dfe8e4;
-    --color-surface-300: #c7d5cf;
+    --color-surface-50: #f5f7f3;
+    --color-surface-100: #edf1ec;
+    --color-surface-200: #d8e1da;
+    --color-surface-300: #c3d0c7;
+}
+
+@layer base {
+    body {
+        background: #f5f7f3;
+        font-family: 'DM Sans', 'Avenir Next', ui-sans-serif, system-ui, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'DM Sans', 'Avenir Next', ui-sans-serif, system-ui, sans-serif;
+    }
 }
 
 @layer utilities {

@@ -15,9 +15,9 @@ class WebsiteSettingSeeder extends Seeder
     public function run(): void
     {
         $settings = [
-            'clinic_name' => 'Lifestyle Sanitarium Clinic',
-            'tagline' => 'Afya Bora, Maisha Bora.',
-            'secondary_tagline' => 'Professional • Confidential • Patient-Centred Care',
+            'clinic_name' => 'MADILA LIFESTYLE CLINIC',
+            'tagline' => 'Elevating Everyday Wellness.',
+            'secondary_tagline' => 'Confidential Care. Thoughtful Guidance. Lasting Wellness.',
 
             'phone_primary' => '0713 999 255',
             'phone_secondary' => '0767 999 255',
@@ -37,7 +37,7 @@ class WebsiteSettingSeeder extends Seeder
             'logo_path' => '',
             'favicon_path' => '',
 
-            'medical_disclaimer' => 'Information provided on this website is intended for general health education and information about our services. It is not a substitute for professional medical consultation, diagnosis or treatment. Please contact Lifestyle Sanitarium Clinic for professional medical advice.',
+            'medical_disclaimer' => 'Information provided on this website is intended for general health education and information about our services. It is not a substitute for professional medical consultation, diagnosis or treatment. Please contact MADILA LIFESTYLE CLINIC for professional medical advice.',
         ];
 
         foreach ($settings as $key => $value) {

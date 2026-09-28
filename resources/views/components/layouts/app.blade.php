@@ -1,10 +1,10 @@
 @props([
     'title' => null,
-    'description' => 'Lifestyle Sanitarium Clinic offers professional and confidential healthcare services focused on reproductive health, urinary system health, consultation, testing, treatment and follow-up care.',
+    'description' => 'MADILA LIFESTYLE CLINIC offers professional and confidential healthcare services focused on reproductive health, urinary system health, consultation, testing, treatment and follow-up care.',
 ])
 
 @php
-    $pageTitle = $title ? $title . ' | Lifestyle Sanitarium Clinic' : 'Lifestyle Sanitarium Clinic | Afya Bora, Maisha Bora.';
+    $pageTitle = $title ? $title . ' | MADILA LIFESTYLE CLINIC' : 'MADILA LIFESTYLE CLINIC | Afya Bora, Maisha Bora.';
 @endphp
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
     <meta name="description" content="{{ $description }}">
 
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Lifestyle Sanitarium Clinic">
+    <meta property="og:site_name" content="MADILA LIFESTYLE CLINIC">
     <meta property="og:title" content="{{ $pageTitle }}">
     <meta property="og:description" content="{{ $description }}">
     <meta property="og:url" content="{{ url()->current() }}">
@@ -30,7 +30,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="antialiased bg-surface-50 text-gray-900 min-h-screen flex flex-col">
+<body class="antialiased bg-surface-50 text-gray-900 min-h-screen flex flex-col selection:bg-primary-200 selection:text-primary-950">
 
     <x-navbar />
 

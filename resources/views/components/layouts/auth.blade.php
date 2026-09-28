@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     @include('partials.theme-init')
-    <title>{{ $title }} | Lifestyle Sanitarium Clinic</title>
+    <title>{{ $title }} | MADILA LIFESTYLE CLINIC</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="antialiased bg-surface-50 text-gray-900 min-h-screen flex items-center justify-center px-4 py-12">
@@ -19,9 +19,9 @@
 
         <div class="text-center mb-8">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-2.5">
-                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-primary-600 text-white font-bold text-lg">L</span>
+                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-primary-600 text-white font-bold text-lg">M</span>
                 <span class="leading-tight text-left">
-                    <span class="block text-base font-bold text-gray-900">Lifestyle Sanitarium</span>
+                    <span class="block text-base font-bold text-gray-900">MADILA LIFESTYLE</span>
                     <span class="block text-[11px] font-medium text-primary-600 tracking-wide">CLINIC</span>
                 </span>
             </a>
@@ -32,7 +32,7 @@
         </div>
 
         <p class="mt-6 text-center text-xs text-gray-500">
-            &copy; {{ now()->year }} Lifestyle Sanitarium Clinic. {{ $footerText }}
+            &copy; {{ now()->year }} MADILA LIFESTYLE CLINIC. {{ $footerText }}
         </p>
     </div>
 </body>

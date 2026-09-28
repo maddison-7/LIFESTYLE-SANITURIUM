@@ -1,0 +1,87 @@
+{
+  "planHash": "cbe21b8793df2c1c3da5a52ccbaf7ff170316c74f6b388125ed255a130d5d2d5",
+  "phase": "baseline",
+  "recordedAtUtc": "2026-09-28T10:14:07.2279832Z",
+  "retryCount": 0,
+  "resetBaseline": true,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 29250,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "vite-builds-assets",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E build\r\n\u003E vite build\r\n\r\n\u001B[36mvite v8.2.1 \u001B[32mbuilding client environment for production...\u001B[36m\u001B[39m\r\n\u001B[33m[plugin laravel:fonts] Optimized font fallbacks require the optional \u0022fontaine\u0022 package. Install it, or set \u0022optimizedFallbacks: false\u0022 on your fonts to disable the feature.\u001B[39m\r\n\u001B[2K\r\ntransforming...\u2713 4 modules transformed.\r\nrendering chunks...\r\ncomputing gzip size...\r\npublic/build/manifest.json                            1.87 kB \u2502 gzip:  0.39 kB\r\npublic/build/fonts-manifest.json                      8.71 kB \u2502 gzip:  0.80 kB\r\npublic/build/assets/inter-400-normal-C38fXH4l.woff2  23.66 kB\r\npublic/build/assets/inter-500-normal-Cerq10X2.woff2  24.27 kB\r\npublic/build/assets/inter-700-normal-Yt3aPRUw.woff2  24.35 kB\r\npublic/build/assets/inter-800-normal-BYj_oED-.woff2  24.40 kB\r\npublic/build/assets/inter-600-normal-LgqL8muc.woff2  24.45 kB\r\npublic/build/assets/inter-400-normal-CyCys3Eg.woff   30.69 kB\r\npublic/build/assets/inter-600-normal-CiBQ2DWP.woff   31.26 kB\r\npublic/build/assets/inter-500-normal-BL9OpVg8.woff   31.28 kB\r\npublic/build/assets/inter-800-normal-D1mf63XC.woff   31.29 kB\r\npublic/build/assets/inter-700-normal-BLAVimhd.woff   31.32 kB\r\npublic/build/assets/fonts-Ca1stQp5.css                3.59 kB \u2502 gzip:  0.43 kB\r\npublic/build/assets/app-BKTf1Uyc.css                 60.40 kB \u2502 gzip: 10.31 kB\r\npublic/build/assets/app-BsSdootZ.js                  45.56 kB \u2502 gzip: 16.25 kB\r\n\r\n\u001B[32m\u2713 built in 12.35s\u001B[39m\r\n\u001B[33m\u001B[33m[PLUGIN_TIMINGS] \u001B[0mYour build spent 100% of 12.3s inside plugin hooks (12.3s).\r\nMeasured inside the callback, so queue time is excluded and time the callback itself awaited is not:\r\n  - laravel:fonts buildStart (86%, 10.6s, 1 call)\r\n  - @tailwindcss/vite:generate:build transform (10%, 1.2s, 1 call)\r\nSee https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.\r\n\u001B[39m\r\n",
+        "durationMs": 15037
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "\r\n\u001B[1m\u001B[30m\u001B[46m RUN \u001B[49m\u001B[39m\u001B[22m \u001B[36mv5.0.2 \u001B[39m\u001B[90mC:/Users/Maddison/Desktop/herbal clinic\u001B[39m\r\n\r\n \u001B[31m\u276F\u001B[39m resources/js/app.spec.js \u001B[2m(\u001B[22m\u001B[2m0 test\u001B[22m\u001B[2m)\u001B[22m\r\n\r\n\u001B[31m\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u001B[39m\u001B[1m\u001B[41m Failed Suites 1 \u001B[49m\u001B[22m\u001B[31m\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u001B[39m\r\n\r\n\u001B[41m\u001B[1m FAIL \u001B[22m\u001B[49m resources/js/app.spec.js\u001B[2m [ resources/js/app.spec.js ]\u001B[22m\r\n\u001B[31m\u001B[1mError\u001B[22m: Vitest failed to find the runner. One of the following is possible:\r\n- \u0022vitest\u0022 is imported directly without running \u0022vitest\u0022 command\r\n- \u0022vitest\u0022 is imported inside \u0022globalSetup\u0022 (to fix this, use \u0022setupFiles\u0022 instead, because \u0022globalSetup\u0022 runs in a different context)\r\n- \u0022vitest\u0022 is imported inside Vite / Vitest config file\r\n- Otherwise, it might be a Vitest bug. Please report it to https://github.com/vitest-dev/vitest/issues\r\n\u001B[39m\r\n\u001B[36m \u001B[2m\u276F\u001B[22m resources/js/app.spec.js:\u001B[2m5:1\u001B[22m\u001B[39m\r\n    \u001B[90m  3|\u001B[39m import Alpine from \u0027alpinejs\u0027;\r\n    \u001B[90m  4|\u001B[39m\r\n    \u001B[90m  5|\u001B[39m beforeEach(() =\u003E {\r\n    \u001B[90m   |\u001B[39m \u001B[31m^\u001B[39m\r\n    \u001B[90m  6|\u001B[39m     vi.stubGlobal(\u0027matchMedia\u0027, vi.fn().mockReturnValue({ matches: fal\u2026\r\n    \u001B[90m  7|\u001B[39m });\r\n\r\n\u001B[31m\u001B[2m\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF\u23AF[1/1]\u23AF\u001B[22m\u001B[39m\r\n\r\n\r\n\u001B[2m Test Files \u001B[22m \u001B[1m\u001B[31m1 failed\u001B[39m\u001B[22m\u001B[90m (1)\u001B[39m\r\n\u001B[2m      Tests \u001B[22m \u001B[2mno tests\u001B[22m\r\n\u001B[2m   Start at \u001B[22m 13:13:55\r\n\u001B[2m   Duration \u001B[22m 11.93s\u001B[2m (environment 100%)\u001B[22m\r\n\r\n",
+        "durationMs": 13536,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "ci"
+        ],
+        "cwd": "c:\\Users\\Maddison\\Desktop\\herbal clinic",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "vite-builds-assets",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "c:\\Users\\Maddison\\Desktop\\herbal clinic",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "args": [
+          "node_modules/vitest/vitest.mjs",
+          "run",
+          "--pool=threads",
+          "--maxWorkers=1"
+        ],
+        "cwd": "c:\\Users\\Maddison\\Desktop\\herbal clinic",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}

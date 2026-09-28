@@ -5,12 +5,12 @@
     'align' => 'center',
 ])
 
-<div class="{{ $align === 'center' ? 'text-center mx-auto' : 'text-left' }} max-w-2xl">
+<div class="{{ $align === 'center' ? 'mx-auto text-center' : 'text-left' }} max-w-3xl">
     @if ($eyebrow)
-        <p class="text-sm font-semibold uppercase tracking-wide text-primary-600 mb-3">{{ $eyebrow }}</p>
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary-600">{{ $eyebrow }}</p>
     @endif
-    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-balance">{{ $title }}</h2>
+    <h2 class="font-serif text-4xl font-semibold leading-[0.98] tracking-[-0.02em] text-gray-900 sm:text-5xl lg:text-[3.25rem] text-balance">{{ $title }}</h2>
     @if ($description)
-        <p class="mt-4 text-base sm:text-lg text-gray-600 text-pretty">{{ $description }}</p>
+        <p class="mt-4 text-base text-gray-600 text-pretty sm:text-lg">{{ $description }}</p>
     @endif
 </div>

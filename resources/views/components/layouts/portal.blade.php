@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     @include('partials.theme-init')
-    <title>{{ $title }} | Patient Portal | Lifestyle Sanitarium Clinic</title>
+    <title>{{ $title }} | Patient Portal | MADILA LIFESTYLE CLINIC</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="antialiased bg-surface-50 text-gray-900 min-h-screen flex flex-col">
@@ -15,9 +15,9 @@
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <a href="{{ route('portal.dashboard') }}" class="flex items-center gap-2.5">
-                    <span class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-600 text-white font-bold">L</span>
+                    <span class="flex h-9 w-9 items-center justify-center rounded-full bg-primary-600 text-white font-bold">M</span>
                     <span class="leading-tight">
-                        <span class="block text-sm font-bold text-gray-900">Lifestyle Sanitarium</span>
+                        <span class="block text-sm font-bold text-gray-900">MADILA LIFESTYLE</span>
                         <span class="block text-[10px] font-medium text-primary-600 tracking-wide">PATIENT PORTAL</span>
                     </span>
                 </a>
@@ -65,7 +65,7 @@
     </main>
 
     <footer class="border-t border-surface-200 bg-white py-6 text-center text-xs text-gray-500">
-        &copy; {{ now()->year }} Lifestyle Sanitarium Clinic. <a href="{{ route('privacy-policy') }}" class="hover:text-primary-700">Privacy Policy</a>
+        &copy; {{ now()->year }} MADILA LIFESTYLE CLINIC. <a href="{{ route('privacy-policy') }}" class="hover:text-primary-700">Privacy Policy</a>
     </footer>
 </body>
 </html>
